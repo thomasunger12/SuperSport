@@ -57,17 +57,38 @@
 .imagen{
     border: solid 4px black;
     height: 250px;
-    width: 250px;
+    width: 250px;;
     border-radius: 7px;
     opacity: 0.9;
 }
+.imagen:hover{
+    transform: scale(1.1);
+    opacity: 1;
+    border-radius: 17px;
 
+}
+.cartas{
+    display: grid;
+    grid-template-columns: 300px 300px ;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    
+}
+.cartas__especiales{
+    display: grid;
+    grid-template-columns: repeat(3, 300px) ;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    
+}
 .miniTit{
     font-family: "sobreRopa";
     font-size: large;
     text-align:center;
     text-decoration: underline;
-    color: azure;
+    color: rgb(0, 0, 0);
     margin-top: 20px;
     margin-bottom: 20px;
 }
