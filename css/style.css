@@ -83,6 +83,9 @@
     gap: 20px;
     
 }
+.short{
+    height: 300px;
+}
 .miniTit{
     font-family: "sobreRopa";
     font-size: large;
