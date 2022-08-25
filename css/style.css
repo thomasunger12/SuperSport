@@ -12,6 +12,9 @@
     font-size: 50px;
     margin: 35px;
     font-family: "paraTitulos";
+    animation-name: animacion;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
 }
 .barraNav{
     color: white;
@@ -116,5 +119,16 @@ footer {
 @media screen and (max-widht: 1200px ){
     body{
         background-color:darkred;
+    }
+}
+@keyframes animacion{
+    0%{
+        font-size: 50px;
+    }
+    50%{
+        font-size: 60px;
+    }
+    100%{
+        font-size: 50px;
     }
 }
