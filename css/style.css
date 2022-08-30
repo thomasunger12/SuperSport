@@ -130,11 +130,24 @@ footer {
 @media screen and (max-widht: 320px){
     .padre{
         grid-template-columns: 300px;
-        grid-template-rows: 60px 250px;
+        grid-template-rows: 250px 250px;
         padding: 20px;
 
     }
     .padre__secundario{
+        grid-template-columns: 300px;
+        grid-template-rows: repeat( 3, 250px);
+        padding: 20px;
+    }
+}
+@media screen and (max-widht: 320px){
+    .cartas{
+        grid-template-columns: 300px;
+        grid-template-rows: 60px 250px;
+        padding: 20px;
+
+    }
+    .cartas__especiales{
         grid-template-columns: 300px;
         grid-template-rows: 60px 250px;
         padding: 20px;
