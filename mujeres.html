@@ -12,60 +12,69 @@
 <body class="cuerpo">
     <header>
         <h1 class="titulo">Mujeres</h1>
-    
-    <nav class="barraNav">
+        <nav class="navbar navbar-expand-lg bg-transparent">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./hombres.html">Hombres</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./mujeres.html">Mujeres</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Deportes
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./futbol.html">Fútbol</a></li>
+                    <li><a class="dropdown-item" href="./rugby.html">Rugby</a></li>
+                    <li><a class="dropdown-item" href="./hockey.html">Hockey</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./ayuda.html">Ayuda</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+    <!--<nav class="barraNav">
         <ul class="lista">
             <li class="item"><a href="index.html">Inicio</a></li>
             <li class="item"><a href="deportes.html">Deportes</a></li>
             <li class="item"><a href="hombres.html">Hombres</a></li>
             <li class="item"><a href="mujeres.html">Mujeres</a></li>
         </ul>
-    </nav>
+    </nav>-->
     </header>    
     <main>
         <h3 class="subTit">Productos Principales</h3>
-       <!-- <article class="padre__secundario">                
-             <h5 class="miniTit">Ropa</h5>
-             <h5 class="miniTit">Zapatillas</h5>
-             <h5 class="miniTit">Accesorios</h5>
-             <img class="imagen" src="img/calza.webp"  alt="">
-             <img class="imagen" src="img/z-mujer.jpg"  alt="">
-             <img class="imagen" src="img/top.jpg"  alt="">
+        <article class="padre__secundario">                
+             <img class="imagen uno" src="img/calza.webp"  alt="">
+             <img class="imagen dos" src="img/z-mujer.jpg"  alt="">
+             <img class="imagen tres" src="img/top.jpg"  alt="">
+             <h5 class="miniTit one">Ropa</h5>
+             <h5 class="miniTit two">Zapatillas</h5>
+             <h5 class="miniTit three">Accesorios</h5>
 
-    </article>  -->
-    <div class="cartas__especiales">
-        <div class="card" style="width: 18rem;">
-          <img src="./img/calza.webp"  class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title miniTit">Calza Mujer</h5>
-            <p class="card-text">Calza larga para entrenar</p>
-            
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="./img/z-mujer.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title miniTit">Zapatillas</h5>
-            <p class="card-text">Zapatillas marca Assics</p>
-            
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="./img/gorras.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title miniTit">Top Deportivo</h5>
-            <p class="card-text">Top Deportivo de Mujer</p>
-            
-          </div>
-        </div>
-      </div>
+    </article> 
     
-</section>
+    
+
         
     </main>
     <footer>
         <p>derechos reservados 2022</p>
-        <a href="ayuda.html">Ayuda</a>
+        
     </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>
 </body>

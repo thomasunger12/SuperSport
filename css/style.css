@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 .cuerpo{
-    background: linear-gradient(orangered, orange);
+   /* background: linear-gradient(black, rgb(65, 59, 47), grey, white);*/
+    background: linear-gradient(white,grey, rgb(65, 59, 47),black);
 }
 .titulo{
     color: black;
@@ -12,40 +13,29 @@
     font-size: 50px;
     margin: 35px;
     font-family: "paraTitulos";
-    animation-name: animacion;
-    animation-iteration-count: infinite;
-    animation-duration: 2s;
+    
 }
-.barraNav{
+/*.barraNav{
     color: white;
     margin: 30px;
     font-family: "losItems";
-}
+}*/
 .lista{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 .item{
     height: 10px;
     padding: 15px;
-    
+    color: aliceblue;
 }
-a {
-    text-decoration: none;
-    color: #000;
-}
-.padre{
-    display: grid;
-    grid-template-columns: 300px 300px ;
-    grid-template-rows: 60px 250px;
-    justify-content: space-evenly;
-}
+
 .padre__secundario{
     display: grid;
-    grid-template-columns: repeat(3, 300px);
-    grid-template-rows: 60px 250px;
+    grid-template-columns:repeat(3, 300px);
+    grid-template-rows: 250px 45px ;
     justify-content: center;
 }
 .subTit{
@@ -54,7 +44,10 @@ a {
     text-transform: uppercase;
     margin: 35px;
     font-family: "miFuente";
-    font-size: xx-large;
+    font-size: 50px;
+    animation-name: animacion;
+    animation-iteration-count: initial;
+    animation-duration: 5s;
 }
 
 .imagen{
@@ -69,23 +62,8 @@ a {
     opacity: 1;
     border-radius: 17px;
 
-}
-.cartas{
-    display: grid;
-    grid-template-columns: 300px 300px ;
-    justify-content: center;
-    padding: 20px;
-    gap: 20px;
-    
-}
-.cartas__especiales{
-    display: grid;
-    grid-template-columns: repeat(3, 300px) ;
-    justify-content: center;
-    padding: 20px;
-    gap: 20px;
-    
-}
+} 
+
 .short{
     height: 300px;
 }
@@ -94,7 +72,7 @@ a {
     font-size: large;
     text-align:center;
     text-decoration: underline;
-    color: rgb(0, 0, 0);
+    color: rgb(300, 300,300);
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -106,12 +84,13 @@ a {
     font-size: x-large;
     text-decoration:underline;
     text-align: center;
+    color: antiquewhite;
 }
 footer {
-    color: #000;
+    color: #999;
     text-transform:capitalize;
-    margin-top: 50px;
-    margin-bottom: 350px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 @font-face{
     font-family: "paraTitulos";
@@ -133,36 +112,68 @@ footer {
     font-family: "losItems";
     src: url("../fonts/items.otf");
 }
-@media screen and (max-widht: 320px){
-    .padre{
-        grid-template-columns: 300px;
-        grid-template-rows: 250px 250px;
-        padding: 20px;
-
+@media screen and (max-width: 900px){
+    .uno{
+        grid-area: img_uno;
     }
-    .padre__secundario{
-        grid-template-columns: 300px;
-        grid-template-rows: repeat( 3, 250px);
-        padding: 20px;
+    .dos{
+        grid-area: img_dos;
     }
+    .tres{
+        grid-area: img_tres;
+    }
+    .one{
+        grid-area: miniTit_one;
+    }
+    .two{
+        grid-area: miniTit_two;
+    }
+    .three{
+        grid-area: miniTit_three;
+    }
+   .padre__secundario{
+    display: grid;
+    grid-template-areas: 
+    "img_uno miniTit_one"
+    "img_dos miniTit_two"
+    "img_tres miniTit_three";
+    grid-template-rows: repeat(3,260px);
+    grid-template-columns: repeat(2,260px);
+    justify-content: center;
+   }
 }
-@media screen and (max-widht: 320px){
-    .cartas{
-        grid-template-columns: 300px;
-        grid-template-rows: 60px 250px;
-        padding: 20px;
-
+@media screen and (max-width: 480px){
+    .uno{
+        grid-area: img_uno;
     }
-    .cartas__especiales{
-        grid-template-columns: 300px;
-        grid-template-rows: 60px 250px;
-        padding: 20px;
+    .dos{
+        grid-area: img_dos;
     }
-}
-@media screen and (max-widht: 1200px ){
-    body{
-        background-color:darkred;
+    .tres{
+        grid-area: img_tres;
     }
+    .one{
+        grid-area: miniTit_one;
+    }
+    .two{
+        grid-area: miniTit_two;
+    }
+    .three{
+        grid-area: miniTit_three;
+    }
+   .padre__secundario{
+    display: grid;
+    grid-template-areas: 
+    "img_uno"
+    "miniTit_one"
+    "img_dos" 
+    "miniTit_two"
+    "img_tres"
+    "miniTit_three";
+    grid-template-rows: 260px ;
+    grid-template-columns: 260px;
+    justify-content: center;
+   }
 }
 @keyframes animacion{
     0%{
