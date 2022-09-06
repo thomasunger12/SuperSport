@@ -5,7 +5,7 @@
 
 .cuerpo {
   /* background: linear-gradient(black, rgb(65, 59, 47), grey, white);*/
-  background: linear-gradient(white, grey, #413b2f, black); }
+  background: linear-gradient(white, #7f7f7f, #413b2f, black); }
 
 .titulo {
   color: black;
@@ -22,7 +22,18 @@
   .lista .item {
     height: 10px;
     padding: 15px;
-    color: aliceblue; }
+    color: #f1f8ff; }
+
+.subTit {
+  color: blue;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 35px;
+  font-family: "miFuente";
+  font-size: 50px;
+  animation-name: animacion;
+  animation-iteration-count: initial;
+  animation-duration: 5s; }
 
 .padre__secundario {
   display: grid;
@@ -30,7 +41,7 @@
   grid-template-rows: 250px 45px;
   justify-content: center; }
   .padre__secundario .imagen {
-    border: solid 4px black;
+    border: 4px solid black;
     height: 250px;
     width: 250px;
     border-radius: 7px;
@@ -50,23 +61,12 @@
   .padre__secundario .miniTit:hover {
     font-size: larger; }
 
-.subTit {
-  color: blue;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 35px;
-  font-family: "miFuente";
-  font-size: 50px;
-  animation-name: animacion;
-  animation-iteration-count: initial;
-  animation-duration: 5s; }
-
 .semiTit {
   font-family: "otraFuente";
   font-size: x-large;
   text-decoration: underline;
   text-align: center;
-  color: antiquewhite; }
+  color: #ffe9cd; }
 
 footer {
   color: #999;
