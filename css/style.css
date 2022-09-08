@@ -20,18 +20,6 @@
     margin: 30px;
     font-family: "losItems";
 }*/
-.lista{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.item{
-    height: 10px;
-    padding: 15px;
-    color: aliceblue;
-}
-
 .padre__secundario{
     display: grid;
     grid-template-columns:repeat(3, 300px);
@@ -69,7 +57,7 @@
 }
 .miniTit{
     font-family: "sobreRopa";
-    font-size: large;
+    font-size: 20px ;
     text-align:center;
     text-decoration: underline;
     color: rgb(300, 300,300);

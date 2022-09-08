@@ -4,8 +4,7 @@
   box-sizing: border-box; }
 
 .cuerpo {
-  /* background: linear-gradient(black, rgb(65, 59, 47), grey, white);*/
-  background: linear-gradient(white, #7f7f7f, #413b2f, black); }
+  background: linear-gradient(#f5f5f5, #7f7f7f, #413b2f, black); }
 
 .titulo {
   color: black;
@@ -14,65 +13,75 @@
   margin: 35px;
   font-family: "paraTitulos"; }
 
-.lista {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-evenly; }
-  .lista .item {
-    height: 10px;
-    padding: 15px;
-    color: #f1f8ff; }
+.hamburguesa {
+  font-family: "losItems"; }
+  .hamburguesa .barraTexto {
+    color: black; }
+  .hamburguesa .buscador {
+    color: black; }
 
-.subTit {
-  color: blue;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 35px;
-  font-family: "miFuente";
-  font-size: 50px;
-  animation-name: animacion;
-  animation-iteration-count: initial;
-  animation-duration: 5s; }
+.principal {
+  padding: 20px; }
+  .principal .subTit {
+    color: #06fd;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "miFuente";
+    font-size: 50px;
+    margin: 35px;
+    animation-name: animacion;
+    animation-iteration-count: initial;
+    animation-duration: 3s; }
 
 .padre__secundario {
   display: grid;
   grid-template-columns: repeat(3, 300px);
-  grid-template-rows: 250px 45px;
+  grid-template-rows: 260px 45px;
   justify-content: center; }
   .padre__secundario .imagen {
-    border: 4px solid black;
+    border: solid 4px black;
     height: 250px;
     width: 250px;
     border-radius: 7px;
     opacity: 0.9; }
-  .padre__secundario .imagen:hover {
-    transform: scale(1.1);
-    opacity: 1;
-    border-radius: 17px; }
+    .padre__secundario .imagen:hover {
+      transform: scale(1.1);
+      opacity: 1;
+      border-radius: 17px; }
   .padre__secundario .miniTit {
     font-family: "sobreRopa";
-    font-size: large;
+    font-size: 20px;
     text-align: center;
     text-decoration: underline;
-    color: white;
     margin-top: 20px;
-    margin-bottom: 20px; }
-  .padre__secundario .miniTit:hover {
-    font-size: larger; }
+    margin-bottom: 20px;
+    color: #f5f5f5; }
+    .padre__secundario .miniTit:hover {
+      font-size: 25px; }
 
 .semiTit {
   font-family: "otraFuente";
-  font-size: x-large;
+  font-size: 35px;
   text-decoration: underline;
   text-align: center;
-  color: #ffe9cd; }
+  color: #f5f5f5; }
+
+.item {
+  margin: 20px;
+  color: #f5f5f5;
+  font-family: "losItems"; }
 
 footer {
   color: #999;
   text-transform: capitalize;
-  margin-top: 30px;
-  margin-bottom: 30px; }
+  margin-top: 35px;
+  margin-bottom: 35px;
+  display: grid;
+  grid-template-columns: auto;
+  padding: 20px; }
+  footer i {
+    font-size: 15px;
+    margin: 5px; }
 
 @font-face {
   font-family: "paraTitulos";
@@ -110,8 +119,8 @@ footer {
   .padre__secundario {
     display: grid;
     grid-template-areas: "img_uno miniTit_one" "img_dos miniTit_two" "img_tres miniTit_three";
-    grid-template-rows: repeat(3, 260px);
-    grid-template-columns: repeat(2, 260px);
+    grid-template-columns: 260px;
+    grid-template-rows: 260px 260px;
     justify-content: center; } }
 
 @media screen and (max-width: 480px) {
@@ -129,9 +138,9 @@ footer {
     grid-area: miniTit_three; }
   .padre__secundario {
     display: grid;
-    grid-template-areas: "img_uno" "miniTit_one" "img_dos"  "miniTit_two" "img_tres" "miniTit_three";
-    grid-template-rows: 260px;
+    grid-template-areas: "img_uno" "miniTit_one" "img_dos" "miniTit_two" "img_tres" "miniTit_three";
     grid-template-columns: 260px;
+    grid-template-rows: 260px;
     justify-content: center; } }
 
 @keyframes animacion {
