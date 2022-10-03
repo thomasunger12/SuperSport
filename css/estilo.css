@@ -42,6 +42,8 @@
     border: solid 4px black;
     height: 250px;
     width: 250px;
+    /*height: $size;
+        width: $size;*/
     border-radius: 7px;
     opacity: 0.9; }
     .padre__secundario .imagen:hover {
@@ -55,33 +57,47 @@
     text-decoration: underline;
     margin-top: 20px;
     margin-bottom: 20px;
+    /*margin-top: $size-xs;
+        margin-bottom: $size-xs;*/
     color: #f5f5f5; }
     .padre__secundario .miniTit:hover {
       font-size: 25px; }
 
-.semiTit {
-  font-family: "otraFuente";
-  font-size: 35px;
-  text-decoration: underline;
-  text-align: center;
-  color: #f5f5f5; }
-
-.item {
-  margin: 20px;
-  color: #f5f5f5;
-  font-family: "losItems"; }
+.preg__frec {
+  display: flex;
+  flex-direction: column; }
+  .preg__frec .semiTit {
+    font-family: "otraFuente";
+    font-size: 35px;
+    text-align: center; }
+  .preg__frec details {
+    padding: 15px; }
+    .preg__frec details .item {
+      margin: 20px;
+      color: #f5f5f5;
+      font-family: "losItems"; }
+    .preg__frec details .answer {
+      font-size: 15px;
+      color: black; }
 
 footer {
   color: #999;
   text-transform: capitalize;
   margin-top: 35px;
   margin-bottom: 35px;
+  /*margin-top: $size-ns;
+    margin-bottom: $size-ns;*/
   display: grid;
   grid-template-columns: auto;
   padding: 20px; }
   footer i {
     font-size: 15px;
     margin: 5px; }
+  footer .mapa {
+    width: 400px;
+    height: 300px;
+    border: black;
+    border-radius: 5px; }
 
 @font-face {
   font-family: "paraTitulos";

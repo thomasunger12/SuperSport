@@ -82,15 +82,25 @@ $estilos: (
         }
     }
 }
-.semiTit{
-    @extend.miniTit
+.preg__frec{
+    display: flex;
+    flex-direction: column;
+    .semiTit{
     font-family: "otraFuente";
     font-size: $size-ns;
-}
-.item{
+    text-align: $centrado;}
+    details{
+    padding: 15px;
+    .item{
     margin: $size-xs;
     color: $color-ropa;
-    font-family: "losItems";
+    font-family: "losItems";}
+
+    .answer{
+        font-size: 15px;
+        color: $color-desarrollo;
+    }
+}
 }
 footer {
     color: #999;
@@ -104,6 +114,12 @@ footer {
     i{
         font-size: 15px;
         margin: 5px;
+    }
+    .mapa{
+        width: 400px;
+        height: 300px;
+        border: $color-desarrollo;
+        border-radius: 5px;
     }
 }
 @font-face{
